@@ -24,31 +24,30 @@
     { "name": "User Client", "status": "interested" }
   ],
   "APEx": [
-    { "name": "Workspace", "status": "interested" },
-    { "name": "Data Gateway", "status": "interested" },
-    { "name": "Resource Health", "status": "interested" },
-    { "name": "Application Quality", "status": "interested" },
     "openEO",
     "OGC API Processes",
     "Application Hub",
     "Federated Orchestrator",
-    "Resource Registration"
+    "Resource Registration",
+    { "name": "Workspace", "status": "interested" },
+    { "name": "Data Gateway", "status": "interested" },
+    { "name": "Resource Health", "status": "interested" },
+    { "name": "Application Quality", "status": "interested" }
   ],
   "ROCS": [
-    { "name": "IAM", "status": "interested" },
-    { "name": "Notification & Automation", "status": "interested" },
-    { "name": "Federated Orchestrator", "status": "interested" },
     "Resource Discovery",
     "OGC API Processes",
-    "Data Access"
-
+    "Data Access",
+    { "name": "IAM", "status": "interested" },
+    { "name": "Notification & Automation", "status": "interested" },
+    { "name": "Federated Orchestrator", "status": "interested" }
   ],
   "Terrascope": [
-    { "name": "Notification & Automation", "status": "interested" },
-    { "name": "Workspace", "status": "interested" },
     "Resource Discovery",
     "Data Access",
-    "openEO"
+    "openEO",
+    { "name": "Notification & Automation", "status": "interested" },
+    { "name": "Workspace", "status": "interested" }
   ],
   "UK DataHub": [
     "Data Access",
@@ -65,6 +64,7 @@
     "OGC API Processes"
   ],
   "ASCEND": [
+    "OGC API Processes",
     { "name": "IAM", "status": "interested" },
     { "name": "Resource Discovery", "status": "interested" },
     { "name": "Data Access", "status": "interested" },
@@ -72,26 +72,26 @@
     { "name": "Federated Orchestrator", "status": "interested" }
   ],
   "Digital Earth Canada": [
-    { "name": "User Client", "status": "interested" },
     "Resource Discovery",
     "OGC API Processes",
     "Application Hub",
     "IAM",
-    "Workspace"
+    "Workspace",
+    "User Client"
   ],
   "CDSE": [
-    { "name": "Notification & Automation", "status": "interested" },
-    { "name": "Workspace", "status": "interested" },
     "Resource Discovery",
     "Data Access",
-    "openEO"
+    "openEO",
+    { "name": "Notification & Automation", "status": "interested" },
+    { "name": "Workspace", "status": "interested" }
   ],
   "GEODES": [
+    "openEO",
     { "name": "IAM", "status": "interested" },
     { "name": "Operations", "status": "interested" },
     { "name": "User Client", "status": "interested" },
     { "name": "Federated Data Proxy", "status": "interested" },
-    { "name": "MLOps", "status": "interested" },
-    "openEO"
+    { "name": "MLOps", "status": "interested" }
   ]
 }
