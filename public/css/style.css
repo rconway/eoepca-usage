@@ -61,7 +61,7 @@ a {
     justify-content: center;
     align-items: top;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 5em;
     row-gap: 5em;
 }
