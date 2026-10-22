@@ -95,7 +95,7 @@ describe('renderMobileTooltip — platform', () => {
   it('annotates interested (not yet active) links', () => {
     const html = renderMobileTooltip(makePlatformNode(2, ['active', 'interested']));
     expect(html).toContain('<span>Building Block 0</span>');
-    expect(html).toContain('Building Block 1 <em class="tooltip-interested">(interested)</em>');
+    expect(html).toContain('Building Block 1 <em class="tooltip-interested">(future)</em>');
   });
 });
 
@@ -131,7 +131,7 @@ describe('renderMobileTooltip — buildingBlock', () => {
 
   it('annotates interested (not yet active) links', () => {
     const html = renderMobileTooltip(makeBuildingBlockNode(2, ['interested', 'active']));
-    expect(html).toContain('Platform 0 <em class="tooltip-interested">(interested)</em>');
+    expect(html).toContain('Platform 0 <em class="tooltip-interested">(future)</em>');
     expect(html).toContain('<span>Platform 1</span>');
   });
 });

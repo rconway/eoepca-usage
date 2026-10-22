@@ -76,7 +76,7 @@ function renderTooltipHtml(
   const hidden = count - MAX_LIST_ITEMS;
   const listItems = visible
     .map((n) => {
-      const suffix = n.interested ? ' <em class="tooltip-interested">(interested)</em>' : '';
+      const suffix = n.interested ? ' <em class="tooltip-interested">(future)</em>' : '';
       return `<span>${escapeHtml(n.name)}${suffix}</span>`;
     })
     .join(' · ');

@@ -19,7 +19,7 @@ interface TooltipConfig {
 
 /**
  * Builds the display list for a node's tooltip: connected names, with
- * "(interested)" appended for links that aren't active use yet.
+ * "(future)" appended for links that aren't active use yet.
  */
 function getRelated(d: VisualizationNode): { label: string; names: string[] } {
   if (d.type === 'platform') {
@@ -27,7 +27,7 @@ function getRelated(d: VisualizationNode): { label: string; names: string[] } {
     return {
       label: data.buildingBlocks.length === 1 ? 'Building Block' : 'Building Blocks',
       names: data.links_original.map(
-        (l) => l.buildingBlock! + (l.status === 'interested' ? ' (interested)' : ''),
+        (l) => l.buildingBlock! + (l.status === 'interested' ? ' (future)' : ''),
       ),
     };
   }
@@ -35,7 +35,7 @@ function getRelated(d: VisualizationNode): { label: string; names: string[] } {
   return {
     label: data.platforms.length === 1 ? 'platform' : 'platforms',
     names: data.links_original.map(
-      (l) => l.platform! + (l.status === 'interested' ? ' (interested)' : ''),
+      (l) => l.platform! + (l.status === 'interested' ? ' (future)' : ''),
     ),
   };
 }
